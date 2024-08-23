@@ -14,9 +14,8 @@ const AverageTestRuntimeExplanation = () => (
 
 const AverageFPSExplanation = ({ refreshRate }: { refreshRate: number }) => (
   <>
-    Frame Per Second. Your app should display {`${refreshRate}`} Frames Per Second to give an
-    impression of fluidity. This number should be close to {`${refreshRate}`}, otherwise it will
-    seem laggy. <br />
+    Frame Per Second. Your app should display {refreshRate} Frames Per Second to give an impression
+    of fluidity. This number should be close to {refreshRate}, otherwise it will seem laggy. <br />
     See{" "}
     <a href="https://www.youtube.com/watch?v=CaMTIgxCSqU" target="_blank" rel="noreferrer">
       this video

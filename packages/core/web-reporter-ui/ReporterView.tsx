@@ -39,7 +39,7 @@ const Report = ({
   const results = mapThreadNames(rawResults);
   const reports = useMemo(
     () => results.map((result) => new ReportModel(result, deviceSpecs)),
-    [results]
+    [results, deviceSpecs]
   );
   const minIterationCount = Math.min(...reports.map((report) => report.getIterationCount()));
   const iterationSelector = useIterationSelector(minIterationCount);
