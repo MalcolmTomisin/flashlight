@@ -36,7 +36,7 @@ export const detectCurrentDeviceRefreshRate = () => {
 
   Logger.debug(`Detected device refresh rate: ${refreshRates[0]} Hz`);
 
-  return refreshRates[0];
+  return Math.floor(refreshRates[0]);
 };
 
 const refreshRateManager = deviceRefreshRateManager();
